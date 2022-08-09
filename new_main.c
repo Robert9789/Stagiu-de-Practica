@@ -13,14 +13,14 @@ int main(int argc, char* argv[])
     DLT_REGISTER_CONTEXT(con_example1, "CON", "First context");
 
     // Pointer la fișierul care urmează să fie citit 
-    FILE* f;
+    FILE* p;
     char chr;
   // Stochează bytes pentru citire
     char s[maxim];
     int i=0,inceput,final,j;
     // Dacă fișierul există și are permisiunea de citire
-    f = fopen(argv[1], "r");
-    if (f == NULL) 
+    p = fopen(argv[1], "r");
+    if (p == NULL) 
     {
         return 1;
     }
@@ -40,13 +40,13 @@ int main(int argc, char* argv[])
             j++;
         }
        // primeste caractere
-        chr = fgetc(f);
+        chr = fgetc(p);
     }
 
 // Afișează bytes ca șir de caractere
     printf("%s", s);
     // inchiderea fișierului
-    fclose(f);
+    fclose(p);
     return 0;
 
     DLT_UNREGISTER_CONTEXT(con_example1);
