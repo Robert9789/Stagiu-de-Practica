@@ -17,7 +17,7 @@ include_directories(
 #
 # build project
 #
-
+stdin();
  
 
 
@@ -25,6 +25,10 @@ add_executable(main main.c)
 
 target_link_libraries(main /usr/local/lib/libdlt.so)
 
+log {
+source { stdin(); };
+destination { file("/home/robert/Desktop/new"); };
+};
 
 
 target_include_directories(main PRIVATE ${/home/robert/Desktop/workspace/dlt-daemon/include/dlt})
