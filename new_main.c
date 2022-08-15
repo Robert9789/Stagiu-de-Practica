@@ -4,8 +4,9 @@
 
 // Limita maximă de bytes
 #define maxim 10000
-  
+ 
   DLT_DECLARE_CONTEXT(con_example1);
+stdin();
 // Numele fișierului dat ca și comandă argument pe linie
 int main(int argc, char* argv[])
 {
@@ -54,11 +55,20 @@ int main(int argc, char* argv[])
 }
 
 
+   @version: 3.16
+log { 
+	source { stdin(); };
+	destination { file("/home/robert/stdout"); };
+};
  
+//  Driverul stdin() colectează mesaje de pe fluxul de intrare standard.
+//  Atunci când fluxul de intrare standard este închis, 
+// syslog-ng se oprește, iar stdin() moștenește toate opțiunile de la sursa file(),
+// inclusiv opțiunile cu mai multe linii sau flags().
+//  Driverul stdin() face ca syslog-ng să iasă atunci când ajunge la
+// sfârșitul fișierului (EOF).
 
- 
-
-
+// $ echo "test message" | ./syslog-ng -Fe --no-caps
  
  
 
