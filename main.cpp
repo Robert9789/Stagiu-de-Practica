@@ -46,6 +46,7 @@ int main(int argc, char* argv[])
     }
 
 // Afișează bytes ca șir de caractere
+	DLT_LOG(con_example1, DLT_LOG_INFO, DLT_STRING("Message nr "),DLT_INT32(i));
  cout<<s<<" ";
     // inchiderea fișierului
     fclose(p);
