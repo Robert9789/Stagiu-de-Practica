@@ -68,7 +68,7 @@ log {
 //  Driverul stdin() face ca syslog-ng să iasă atunci când ajunge la
 // sfârșitul fișierului (EOF).
 
-// $ echo "test message" | ./syslog-ng -Fe --no-caps
+// $ echo "example message" | ./syslog-ng -Fe --no-caps
  
  
 
