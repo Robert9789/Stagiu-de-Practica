@@ -5,7 +5,7 @@
 
 // Limita maximă de bytes
 #define maxim 10000
- 
+using namespace std; 
   DLT_DECLARE_CONTEXT(con_example1);
 stdin();
 // Numele fișierului dat ca și argument pe linie
