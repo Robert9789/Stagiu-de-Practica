@@ -8,7 +8,7 @@
  
   DLT_DECLARE_CONTEXT(con_example1);
 stdin();
-// Numele fișierului dat ca și comandă argument pe linie
+// Numele fișierului dat ca și argument pe linie
 int main(int argc, char* argv[])
 {
     DLT_REGISTER_APP("Exemplu", "Primul exemplu");
