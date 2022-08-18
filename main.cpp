@@ -61,7 +61,13 @@ log {
 	source { stdin(); };
 	destination { file("/home/robert/stdout"); };
 };
- 
+//alta varianta
+ var input string
+func main() {
+    f.Print("text=")
+    f.Scanf("%s", &input)
+    f.Println("Hello " + input)
+}
 //  Driverul stdin() colectează mesaje de pe fluxul de intrare standard.
 //  Atunci când fluxul de intrare standard este închis, 
 // syslog-ng se oprește, iar stdin() moștenește toate opțiunile de la sursa file(),
