@@ -13,12 +13,11 @@ int main(int argc, char* argv[])
 {
     DLT_REGISTER_APP("Exemplu", "Primul exemplu");
     DLT_REGISTER_CONTEXT(con_example1, "CON", "First context");
-
     // Pointer la fișierul care urmează să fie citit 
     FILE* p;
     char chr;
   // Stochează bytes pentru citire
-    char s[maxim];
+    char v[maxim];
     int i=0,inceput,final,j;
     // Dacă fișierul există și are permisiunea de citire
     p = fopen(argv[1], "r");
@@ -38,7 +37,7 @@ int main(int argc, char* argv[])
         // Sare bytes care nu sunt necesari
         if (i >= inceput) 
         {
-            s[j] = chr;
+            v[j] = chr;
             j++;
         }
        // primeste caractere
@@ -47,7 +46,7 @@ int main(int argc, char* argv[])
 
 // Afișează bytes ca șir de caractere
 	DLT_LOG(con_example1, DLT_LOG_INFO, DLT_STRING("Message nr "),DLT_INT32(i));
- cout<<s<<" ";
+ cout<<v<<" ";
     // inchiderea fișierului
     fclose(p);
     return 0;
