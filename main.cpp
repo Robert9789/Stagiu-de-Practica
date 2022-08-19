@@ -64,6 +64,14 @@ int main(int argc, char* argv[])
     DLT_UNREGISTER_CONTEXT(con_example1);
     DLT_UNREGISTER_APP();
 }
+//scrierea in terminal a comenzi de mai jos.
+//În mod implicit, comanda trimite ieșirile la stdout și pot fi redirecționate către fișier folosind
+//command > filename.txt
+
+
+
+
+
 
 
    //@version: 3.16
