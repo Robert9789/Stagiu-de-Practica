@@ -88,13 +88,13 @@ int main()
   
  DLT_LOG(con_example1, DLT_LOG_INFO, DLT_STRING("fisier.txt"),DLT_INT(f_size));
   
- while(newfile.eof() !=true)
+ while(newfile.eof() )
  {
   newfile.read();
    DLT_LOG(con_example1, DLT_LOG_INFO, DLT_STRING("Message"),DLT_INT(f_size));
 
  }
-file.close();
+newfile.close();
 }
 //scrierea in terminal a comenzi de mai jos.
 //În mod implicit, comanda trimite ieșirile la stdout și pot fi redirecționate către fișier folosind
