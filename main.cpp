@@ -85,7 +85,9 @@ int main()
   int f_size;
 
  ifstream file("newfile.txt",r);
-
+  
+ DLT_LOG(con_example1, DLT_LOG_INFO, DLT_STRING("newfile.txt"),DLT_INT(f_size));
+  
  while(newfile.eof() != true)
  {
   file.read();
