@@ -99,7 +99,7 @@ file.close();
 //scrierea in terminal a comenzi de mai jos.
 //În mod implicit, comanda trimite ieșirile la stdout și pot fi redirecționate către fișier folosind
 //command > filename.txt
-//ls > file.txt
+//ls > fisier.txt
 //ls /home/robert/Desktop/new 2>/dev/null |while read -r output; do
  //   echo ${output}
 //done
