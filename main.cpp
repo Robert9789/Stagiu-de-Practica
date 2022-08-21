@@ -88,7 +88,7 @@ int main()
   
  DLT_LOG(con_example1, DLT_LOG_INFO, DLT_STRING("fisier.txt"),DLT_INT(f_size));
   
- while(newfile.eof() != true)
+ while(newfile.eof() !=true)
  {
   newfile.read();
    DLT_LOG(con_example1, DLT_LOG_INFO, DLT_STRING("Message"),DLT_INT(f_size));
