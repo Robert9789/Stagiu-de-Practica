@@ -71,7 +71,7 @@ int main(int argc, char* argv[])
 //În mod implicit, comanda trimite ieșirile la stdout și pot fi redirecționate către fișier folosind
 //command > filename.txt
 //ls > file.txt
-//ls /home/robert/Desktop/ 2>/dev/null |while read -r output; do
+//ls /home/robert/Desktop/new 2>/dev/null |while read -r output; do
  //   echo ${output}
 //done
 
