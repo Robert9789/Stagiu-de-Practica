@@ -84,11 +84,11 @@ int main()
 
   int f_size;
 
- ifstream file("newfile.txt",r);
+ ifstream file("newfile.txt");
   
  DLT_LOG(con_example1, DLT_LOG_INFO, DLT_STRING("newfile.txt"),DLT_INT(f_size));
   
- while(newfile.eof() != true)
+ while(file.eof() != true)
  {
   file.read();
    DLT_LOG(con_example1, DLT_LOG_INFO, DLT_STRING("Message"),DLT_INT(f_size));
