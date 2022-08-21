@@ -84,13 +84,13 @@ int main()
 
   int f_size;
 
- ifstream file("newfile.txt");
+ ifstream newfile("fisier.txt");
   
- DLT_LOG(con_example1, DLT_LOG_INFO, DLT_STRING("newfile.txt"),DLT_INT(f_size));
+ DLT_LOG(con_example1, DLT_LOG_INFO, DLT_STRING("fisier.txt"),DLT_INT(f_size));
   
- while(file.eof() != true)
+ while(newfile.eof() != true)
  {
-  file.read();
+  newfile.read();
    DLT_LOG(con_example1, DLT_LOG_INFO, DLT_STRING("Message"),DLT_INT(f_size));
 
  }
