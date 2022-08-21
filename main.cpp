@@ -67,6 +67,33 @@ int main(int argc, char* argv[])
 
 
 
+
+////////////////////////////////////////////////////////////////
+
+#include<bits/stdc++.h> 
+#include <iostream>
+#include<fstream>
+#include <dlt/dlt.h>
+ using namespace std;
+  DLT_DECLARE_CONTEXT(con_example1);
+int main()
+{
+ DLT_REGISTER_APP("Exemplu", "Primul exemplu");
+    DLT_REGISTER_CONTEXT(con_example1, "CON", "First context");
+    DLT_LOG(con_example1, DLT_LOG_INFO, DLT_STRING("start input"));
+
+  int f_size;
+
+ ifstream file("newfile.txt",r);
+
+ while(newfile.eof() != true)
+ {
+  file.read();
+   DLT_LOG(con_example1, DLT_LOG_INFO, DLT_STRING("Message"),DLT_INT(f_size));
+
+ }
+file.close();
+}
 //scrierea in terminal a comenzi de mai jos.
 //În mod implicit, comanda trimite ieșirile la stdout și pot fi redirecționate către fișier folosind
 //command > filename.txt
